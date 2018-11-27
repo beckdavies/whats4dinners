@@ -1,35 +1,16 @@
 <!DOCTYPE>
 <html>
 <head>
-
 	<link rel="stylesheet" type="text/css" href="styles.css">
-
-
 </head>
 
 <body>
 
-	<!-- <div class="tabs">
-
-		<div class="tabs__nav">
-			<div class="tabs__nav-item">Week 1</div>
-			<div class="tabs__nav-item">Week 2</div>
-			<div class="tabs__nav-item">Week 3</div>
-		</div>
-
-		<div class="tabs__content">
-			<div>week 1 menu</div>
-			<div>week 2 menu</div>
-			<div>week 3 menu</div>
-		</div>
-	</div> -->
-<div id="demo"></div>
-
 <div class="tabs">
 	<div data-tabs class="tabs__nav">
-		<a data-tab class="tabs__nav-item" href="#wk1">Week 1</a>
-		<a data-tab class="tabs__nav-item" href="#wk2">Week 2</a>
-		<a data-tab class="tabs__nav-item" href="#wk3">Week 3</a>
+		<a data-tab class="tabs__nav-item active" id="week1" href="#wk1">Week 1</a>
+		<a data-tab class="tabs__nav-item" id="week2" href="#wk2">Week 2</a>
+		<a data-tab class="tabs__nav-item" id="week3" href="#wk3">Week 3</a>
 	</div>
 
 	<div data-tabs-content>
@@ -39,11 +20,104 @@
 		</div>
 		<div data-tabs-pane class="tabs-pane" id="wk2">
 			
-			Week 2 content
+			<table>
+				<thead>
+					<tr>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Pasta bolognaise and garlic bread</td>
+					<td>Big breakfast wrap</td>
+					<td>Roast chicken dinner</td>
+					<td>Crispy fish fillet</td>
+					<td>Hot dog</td>
+				</tr>
+				<tr>
+					<td>Vegetable spring rolls and sweet chilli dipping sauce</td>
+					<td>Vegetable pizza pinwheel</td>
+					<td>Tomato pasta bake</td>
+					<td>Vegetable burrito</td>
+					<td>Falafel stuffed pitta bread</td>
+				</tr>
+				<tr>
+					<td>Noodles</td>
+					<td>Hash brown</td>
+					<td>Roasted potatoes and creamy mash</td>
+					<td>Potato wedges</td>
+					<td>Chips</td>
+				</tr>
+				<tr>
+					<td>Salad bar</td>
+					<td>Baked beans</td>
+					<td>Broccoli and cauliflower</td>
+					<td>Sweetcorn</td>
+					<td>Vegetable sticks</td>
+				</tr>
+				<tr>
+					<td>Pancake and ice cream</td>
+					<td>Fruit sponge and custard</td>
+					<td>Krispie cake</td>
+					<td>Lemon drizzle</td>
+					<td>Fruit flapjack</td>
+				</tr>
+				</tbody>
+			</table>
 		</div>
 		<div data-tabs-pane class="tabs-pane" id="wk3">
-			
-			Week 3 content
+			<table>
+				<thead>
+					<tr>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Fish fingers</td>
+					<td>Chicken Curry, Naan bread</td>
+					<td>Roast Beef and Yorkshire pudding</td>
+					<td>Sausage</td>
+					<td>Chicken burger</td>
+				</tr>
+				<tr>
+					<td>Chinese vegetable noodles</td>
+					<td>Vegetable tortilla stack</td>
+					<td>Quiche</td>
+					<td>Cheese and bean pasty</td>
+					<td>Deli wrap</td>
+				</tr>
+				<tr>
+					<td>Herby diced potatoes</td>
+					<td>Rice or potato wedges</td>
+					<td>Roasted potatoes or creamy mash</td>
+					<td>Creamed mashed potato</td>
+					<td>Chips</td>
+				</tr>
+				<tr>
+					<td>Baked beans and peas</td>
+					<td>Peas or sweetcorn</td>
+					<td>Carrots and broccoli</td>
+					<td>Carrots</td>
+					<td>Vegetable sticks</td>
+				</tr>
+				<tr>
+					<td>Bluberry muffin</td>
+					<td>Jelly and ice cream</td>
+					<td>Chocolate brownie</td>
+					<td>Apple topped rice pudding</td>
+					<td>Orange and oat biscuit</td>
+				</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 </div>
