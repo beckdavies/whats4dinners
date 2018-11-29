@@ -5,6 +5,9 @@ var next;
 var range_start;
 var range_end;
 
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];;
+
 var map_data = [ 
 	
 	{week : '2', start: '11/05/2018', end: '11/11/2018', next: '3'},
@@ -46,8 +49,6 @@ var map_data = [
 	{week : '2', start: '07/15/2019', end: '07/21/2019', next: '0'},
 ];
 
-// for each item in the array
-
 map_data.forEach(function(el, index) {
     
     // assign the start date to a variable
@@ -56,10 +57,10 @@ map_data.forEach(function(el, index) {
     // assign the end date to a variable
     range_end = new Date(el.end);
     
-    // console.log('s '+ range_start+ '\n' + 'e ' + range_end+ '\n'+el.week);
-
     // see if the current date falls in the range between the start and the end date
 	// if it does, set the current week to the wekk variable
+
+	document.getElementById('js-today').innerHTML = days[today.getDay()] + ' ' + today.getDate() + ' ' + months[today.getMonth()];
 
     if(today > range_start && today < range_end) {
         menu_week = 'week' + el.week;
