@@ -64,13 +64,15 @@ map_data.forEach(function(el, index) {
 
     if(today > range_start && today < range_end) {
         menu_week = 'week' + el.week;
-        console.log(today + ':' + menu_week);
         
         if(menu_week == 'weekh') {
+        	
         	menu_week = 'week' + el.next;
-        	console.log('today is a holiday. when they go back it will be '+menu_week);
+        	document.getElementById('js-week').innerHTML = ' - holiday.';
+        	document.getElementById('js-hol').innerHTML = menu_week + ' on return';
         	document.getElementById(menu_week).click();
         } else {
+        	document.getElementById('js-week').innerHTML = menu_week;
 			document.getElementById(menu_week).click();
         }
 

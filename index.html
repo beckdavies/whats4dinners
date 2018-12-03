@@ -1,24 +1,29 @@
 <!DOCTYPE>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
 
-<div id="js-today"></div>
+<div class="the-date">
+	<span id="js-today"></span>
+	<span id="js-week"></span>
+	<span id="js-hol"></span>
+</div>
 
 <div class="tabs">
 	<div data-tabs class="tabs__nav">
 		<a data-tab class="tabs__nav-item active" id="week1" href="#wk1">Week 1</a>
 		<a data-tab class="tabs__nav-item" id="week2" href="#wk2">Week 2</a>
 		<a data-tab class="tabs__nav-item" id="week3" href="#wk3">Week 3</a>
+		<a data-tab class="tabs__nav-item" id="all-dates" href="#alldates">Dates</a>
 	</div>
 
-	<div data-tabs-content >
+	<div data-tabs-content>
 		<div data-tabs-pane class="tabs__pane active" id="wk1">
 			<div class="tabs__pane-item tabs__pane-item--mon">
-				<div class="tabs__pane-heading">Monday</div>
+				<h1 class="tabs__pane-heading">Monday</h1>
 				<div>Home baked pizza</div>
 				<div>Salmon goujons</div>
 				<div>Saute potatoes</div>
@@ -27,7 +32,7 @@
 				<div>Mandarins and ice cream</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--tue">
-				<div class="tabs__pane-heading">Tuesday</div>
+				<h1 class="tabs__pane-heading">Tuesday</h1>
 				<div>Meatballs in tomato sauce with garlic bread</div>
 				<div>Vegetable fajita wrap</div>
 				<div>Pasta swirls</div>
@@ -37,7 +42,7 @@
 				<div>Bakewell slice and custard</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--wed">
-				<div class="tabs__pane-heading">Wednesday</div>
+				<h1 class="tabs__pane-heading">Wednesday</h1>
 				<div>Roast turkey dinner</div>
 				<div>Vegetable soup and crusty filled half baguette</div>
 				<div>Roasted potatoes and creamy mash</div>
@@ -46,7 +51,7 @@
 				<div>Shortbread biscuit</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--thu">
-				<div class="tabs__pane-heading">Thursday</div>
+				<h1 class="tabs__pane-heading">Thursday</h1>
 				<div>Cheesy pasta, peas and bacon</div>
 				<div>Fishcake</div>
 				<div>Potato wedges</div>
@@ -55,7 +60,7 @@
 				<div>Chocolate cake and chocolate sauce</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--fri">
-				<div class="tabs__pane-heading">Friday</div>
+				<h1 class="tabs__pane-heading">Friday</h1>
 				<div>Chicken nuggets</div>
 				<div>Toasted half panini</div>
 				<div>Chips</div>
@@ -66,7 +71,7 @@
 		</div>
 		<div data-tabs-pane class="tabs__pane" id="wk2">
 			<div class="tabs__pane-item tabs__pane-item--mon">
-				<div class="tabs__pane-heading">Monday</div>
+				<h1 class="tabs__pane-heading">Monday</h1>
 				<div>Pasta bolognaise and garlic bread</div>
 				<div>Vegetable spring rolls and sweet chilli dipping sauce</div>
 				<div>Noodles</div>
@@ -74,7 +79,7 @@
 				<div>Fruit topped pancake and ice cream</div>
 			</div>	
 			<div class="tabs__pane-item tabs__pane-item--tue">
-				<div class="tabs__pane-heading">Tuesday</div>
+				<h1 class="tabs__pane-heading">Tuesday</h1>
 				<div>Big breakfast wrap</div>
 				<div>Vegetable pizza pinwheel</div>
 				<div>Hash brown</div>
@@ -84,7 +89,7 @@
 			</div>
 			
 			<div class="tabs__pane-item tabs__pane-item--wed">
-				<div class="tabs__pane-heading">Wednesday</div>
+				<h1 class="tabs__pane-heading">Wednesday</h1>
 				<div>Roast chicken dinner</div>
 				<div>Tomato pasta bake</div>
 				<div>Roasted potatoes and creamy mash</div>
@@ -93,7 +98,7 @@
 				<div>Krispie cake</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--thu">
-				<div class="tabs__pane-heading">Thursday</div>
+				<h1 class="tabs__pane-heading">Thursday</h1>
 				<div>Crispy fish fillet</div>
 				<div>Vegetable burrito</div>
 				<div>Potato wedges</div>
@@ -102,7 +107,7 @@
 				<div>Lemon drizzle</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--fri">
-				<div class="tabs__pane-heading">Friday</div>
+				<h1 class="tabs__pane-heading">Friday</h1>
 				<div>Hot dog</div>
 				<div>Falafel stuffed pitta bread</div>
 				<div>Chips</div>
@@ -113,7 +118,7 @@
 		</div>
 		<div data-tabs-pane class="tabs__pane" id="wk3">
 			<div class="tabs__pane-item tabs__pane-item--mon">
-				<div class="tabs__pane-heading">Monday</div>
+				<h1 class="tabs__pane-heading">Monday</h1>
 				<div>Fish fingers</div>
 				<div>Chinese vegetable noodles</div>
 				<div>Herby diced potatoes</div>
@@ -122,7 +127,7 @@
 				<div>Bluberry muffin</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--tue">
-				<div class="tabs__pane-heading">Tuesday</div>
+				<h1 class="tabs__pane-heading">Tuesday</h1>
 				<div>Chicken Curry, Naan bread</div>
 				<div>Vegetable tortilla stack</div>
 				<div>Rice or potato wedges</div>
@@ -131,7 +136,7 @@
 				<div>Jelly and ice cream</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--wed">
-				<div class="tabs__pane-heading">Wednesday</div>
+				<h1 class="tabs__pane-heading">Wednesday</h1>
 				<div>Roast Beef and Yorkshire pudding</div>
 				<div>Quiche</div>
 				<div>Roasted potatoes and creamy mash</div>
@@ -140,7 +145,7 @@
 				<div>Chocolate brownie</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--thu">
-				<div class="tabs__pane-heading">Thursday</div>
+				<h1 class="tabs__pane-heading">Thursday</h1>
 				<div>Sausage</div>
 				<div>Cheese and bean pasty</div>
 				<div>Creamed mashed potato</div>
@@ -149,7 +154,7 @@
 				<div>Apple topped rice pudding</div>
 			</div>
 			<div class="tabs__pane-item tabs__pane-item--fri">
-				<div class="tabs__pane-heading">Friday</div>
+				<h1 class="tabs__pane-heading">Friday</h1>
 				<div>Chicken burger</div>
 				<div>Deli wrap</div>
 				<div>Chips</div>
@@ -158,11 +163,525 @@
 				<div>Orange and oat biscuit</div>
 			</div>
 		</div>
+		<div data-tabs-pane class="tabs__pane" id="alldates">
+			<table>
+				<thead>
+					<tr>
+						<th colspan="7">December</th>
+					</tr>
+					<tr>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th>Fr</th>
+						<th>Sa</th>
+						<th>Su</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>31</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th colspan="7">January</th>
+					</tr>
+					<tr>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th>Fr</th>
+						<th>Sa</th>
+						<th>Su</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+					</tr>
+					<tr>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th colspan="7">February</th>
+					</tr>
+					<tr>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th>Fr</th>
+						<th>Sa</th>
+						<th>Su</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th colspan="7">March</th>
+					</tr>
+					<tr>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th>Fr</th>
+						<th>Sa</th>
+						<th>Su</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th colspan="7">April</th>
+					</tr>
+					<tr>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th>Fr</th>
+						<th>Sa</th>
+						<th>Su</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th colspan="7">May</th>
+					</tr>
+					<tr>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th>Fr</th>
+						<th>Sa</th>
+						<th>Su</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+					</tr>
+					<tr>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th colspan="7">June</th>
+					</tr>
+					<tr>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th>Fr</th>
+						<th>Sa</th>
+						<th>Su</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+					<tr>
+						<th colspan="7">July</th>
+					</tr>
+					<tr>
+						<th>Mo</th>
+						<th>Tu</th>
+						<th>We</th>
+						<th>Th</th>
+						<th>Fr</th>
+						<th>Sa</th>
+						<th>Su</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+		</div>
 	</div>
 </div>
 
-<script src="dates.js"></script>
-<script src="tabby.js"></script>
+<script src="js/dates.js"></script>
+<script src="js/tabby.js"></script>
 <script>
 	tabby.init();
 </script>
