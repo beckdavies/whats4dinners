@@ -66,13 +66,13 @@ map_data.forEach(function(el, index) {
         menu_week = 'week' + el.week;
         
         if(menu_week == 'weekh') {
-        	
-        	menu_week = 'week' + el.next;
         	document.getElementById('js-week').innerHTML = ' - holiday.';
+			menu_week = 'week' + el.next;
         	document.getElementById('js-hol').innerHTML = menu_week + ' on return';
         	document.getElementById(menu_week).click();
         } else {
         	document.getElementById('js-week').innerHTML = menu_week;
+        	document.getElementById('js-hol').innerHTML = '';
 			document.getElementById(menu_week).click();
         }
 
